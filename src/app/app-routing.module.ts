@@ -10,7 +10,11 @@ const routes: Routes = [
     path: '',
     redirectTo: 'home',
     pathMatch: 'full'
+  },  {
+    path: 'mapview',
+    loadChildren: () => import('./mapview/mapview.module').then( m => m.MapviewPageModule)
   },
+
 ];
 
 @NgModule({
