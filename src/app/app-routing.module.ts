@@ -27,6 +27,11 @@ const routes: Routes = [
     path: '**',
     redirectTo: 'welcome', // Redirigir a 'welcome' en caso de una ruta no encontrada
   },
+  {
+    path: 'mapview',
+    loadChildren: () => import('./mapview/mapview.module').then( m => m.MapviewPageModule)
+  },
+
 ];
 
 @NgModule({
