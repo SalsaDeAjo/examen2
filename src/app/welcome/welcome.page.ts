@@ -19,5 +19,10 @@ export class WelcomePage {
     // Navegar a la página de registro
     this.router.navigate(['/register']);
   }
+
+  goToMapview() {
+  // Navegar a la página de registro
+  this.router.navigate(['/mapview']);
+  }
 }
 
